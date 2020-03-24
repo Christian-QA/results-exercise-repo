@@ -31,10 +31,13 @@ public class Runner {
 		} else {      /// Counts the failures if success criteria is not met
 			int failures = 0;
 			if ((physics_marks*100)/150 < 60) {
+				System.out.println("You failed physics");
 				failures += 1;
 			} if ((chemistry_marks*100)/150 < 60) {
+				System.out.println("Did you pass chemistry...? Nope");
 				failures += 1;
 			} if ((biology_marks*100)/150 < 60) {
+				System.out.println("How about biology? Ehh, nope.");
 				failures += 1;
 			}
 			
